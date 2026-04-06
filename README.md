@@ -1,7 +1,7 @@
 
   # Landing page prototype
 
-  This is a code bundle for Landing page prototype. The original project is available at https://www.figma.com/design/C9Ooasy0JdvKwjoK5BVz4V/Landing-page-prototype.
+  This is a code bundle for Landing page prototype. The original project is available at https://pod-earth-92202107.figma.site/.
 
   ## Running the code
 

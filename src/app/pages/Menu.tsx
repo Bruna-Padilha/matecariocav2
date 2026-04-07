@@ -8,7 +8,7 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Textarea } from "../components/ui/textarea";
 
-// CORREÇÃO DOS CAMINHOS DAS IMAGENS
+
 import mateIcon from "../../assets/7151a8c8c6cd8b83fe785893c4a16e72878b01a3.png";
 import limaoIcon from "../../assets/1a6654dea22df9da1d09a0be4e0f15ea51e7e4ca.png";
 
@@ -339,7 +339,7 @@ export function Menu() {
                 </p>
               </div>
 
-              {/* Instagram LINK COM ANIMAÇÃO */}
+              {/* Instagram */}
               <a
                 href="https://instagram.com/matecariocafoz"
                 target="_blank"

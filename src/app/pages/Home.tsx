@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { ChevronRight, Image as ImageIcon } from "lucide-react";
 import cadeiraIcon from "../../imports/Cadeira.svg";
-import rastroFundo from "../../assets/Group 4.png";
+import rastroFundo from "../../assets/Group_4.png";
 
 export function Home() {
   return (

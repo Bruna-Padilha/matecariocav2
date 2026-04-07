@@ -1,49 +1,64 @@
 import { Link } from "react-router";
 import { ChevronRight, Image as ImageIcon } from "lucide-react";
 import cadeiraIcon from "../../imports/Cadeira.svg";
+import rastroFundo from "../../assets/Group 4.png";
 
 export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#fdfdfb]">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <h1
-                className="text-4xl md:text-6xl mb-6 leading-tight"
-                style={{ fontFamily: 'Righteous, sans-serif' }}
-              >
-                <span className="text-[#004042]">TUDO COMEÇOU COM</span>{" "}
-                <span className="text-[#f78211] text-5xl md:text-7xl">UMA VIAGEM</span>
-              </h1>
-              <div className="inline-block bg-[#fdc101] px-6 py-3 rounded-lg transform -rotate-6 shadow-lg mb-8">
-                <p className="text-[#004042] text-lg" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Do verão da carioca direto pra Foz
-                </p>
-              </div>
-              <div className="mt-8">
-                <Link
-                  to="/cardapio"
-                  className="inline-flex items-center gap-2 bg-[#0c6938] hover:bg-[#004042] text-white px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg"
-                >
-                  <span className="font-semibold">Experimente agora</span>
-                  <ChevronRight size={20} />
-                </Link>
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="w-full bg-gradient-to-br from-[#004042] to-[#0c6938] rounded-3xl shadow-2xl p-12 flex flex-col items-center justify-center min-h-[500px] border-4 border-dashed border-[#f78211]">
-                <ImageIcon size={80} className="text-[#fdc101] mb-4" />
-                <p className="text-[#fdc101] text-xl text-center" style={{ fontFamily: 'Righteous, sans-serif' }}>
-                  FOTO HERO: VIAGEM/PRODUTO
-                </p>
-                <p className="text-white/70 text-sm mt-2">Inserir imagem aqui</p>
-              </div>
-            </div>
-          </div>
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#fdfdfb]">
+  
+  {/* IMAGEM DE FUNDO (RASTRO) */}
+  <div 
+    className="absolute inset-0 z-0 pointer-events-none opacity-60"
+    style={{
+      backgroundImage: `url(${rastroFundo})`,
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}
+  ></div>
+
+  <div className="container mx-auto px-4 max-w-6xl relative z-10">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="order-2 md:order-1">
+        <h1
+          className="text-4xl md:text-6xl mb-6 leading-tight"
+          style={{ fontFamily: 'Righteous, sans-serif' }}
+        >
+          <span className="text-[#004042]">TUDO COMEÇOU COM</span>{" "}
+          <span className="text-[#f78211] text-5xl md:text-7xl">UMA VIAGEM</span>
+        </h1>
+        {/* ... restante do seu código do texto ... */}
+        <div className="inline-block bg-[#fdc101] px-6 py-3 rounded-lg transform -rotate-6 shadow-lg mb-8">
+          <p className="text-[#004042] text-lg" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            Do verão carioca direto pra Foz
+          </p>
         </div>
-      </section>
+        <div className="mt-8">
+          <Link
+            to="/cardapio"
+            className="inline-flex items-center gap-2 bg-[#0c6938] hover:bg-[#004042] text-white px-8 py-4 rounded-full transition-all transform hover:scale-105 shadow-lg"
+          >
+            <span className="font-semibold">Experimente agora</span>
+            <ChevronRight size={20} />
+          </Link>
+        </div>
+      </div>
+
+      <div className="order-1 md:order-2">
+        <div className="w-full bg-gradient-to-br from-[#004042] to-[#0c6938] rounded-3xl shadow-2xl p-12 flex flex-col items-center justify-center min-h-[500px] border-4 border-dashed border-[#f78211]">
+          <ImageIcon size={80} className="text-[#fdc101] mb-4" />
+          <p className="text-[#fdc101] text-xl text-center" style={{ fontFamily: 'Righteous, sans-serif' }}>
+            FOTO HERO: VIAGEM/PRODUTO
+          </p>
+          <p className="text-white/70 text-sm mt-2">Inserir imagem aqui</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Quem Somos - Mari e Vini */}
       <section className="py-20 bg-[#0c6938]">
